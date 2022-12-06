@@ -1,0 +1,36 @@
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.container picture {
+    width: 524px;
+    height: 650px;
+}
+
+.container picture img {
+    width: inherit;
+}
+
+.chapter-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.chapter-number {
+    background-color: var(--color-cmd-yellow);
+    padding: .25rem;
+    font-size: 1.3rem;
+    border: 2px solid var(--color-black);
+    margin-bottom: .5rem;
+}
+
+.chapter-title {
+    font-size: 1.3rem;
+    border: 2px solid var(--color-black);
+    padding: .25rem;
+    margin-top: .5rem;
+}

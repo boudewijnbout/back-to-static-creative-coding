@@ -1,0 +1,10 @@
+.image-wrapper {
+    width: 100vw;
+    height: 20rem;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
