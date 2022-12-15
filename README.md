@@ -1,2 +1,2 @@
-# Creative Coding Week #1
+# CC | Week #1
 
