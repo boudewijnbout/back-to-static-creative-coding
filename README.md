@@ -29,4 +29,18 @@ Dit project is gemaakt met ReactJS en Framer Motion. Verder staat hieronder nog 
 
 De applicatie is op twee manieren te gebruiken: lokaal en op het web. Lokaal is bedoeld voor het testen, experimenteren en eventueel verbeteren van de applicatie in een ontwikkel omgeving. Het is ook mogelijk om de applicatie online te bezoeken en te gebruiken, dit kan op onderstaande link:
 
-[Webversie]()
+[Webversie](https://back-to-static-creative-coding-delta.vercel.app/)
+
+## 📖 Bronnen
+
+[ReactJS](https://reactjs.org/)
+<br>
+[Framer Motion](https://www.framer.com/)
+<br>
+[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+## 🔓 Licentie
+
+![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
+
+This work is licensed under [GNU GPLv3](./LICENSE).
