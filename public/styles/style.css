@@ -40,7 +40,7 @@ section {
     height: 100vh;
     position: relative;
     z-index: 2;
-    background-image: url("public/images/main-content-image.jpg");
+    background-image: url("../../public/images/main-content-image.jpg");
     background-position: center center;
 }
 
@@ -73,7 +73,7 @@ section article p {
 }
 
 picture {
-    background-image: url("public/images/main-content-image.jpg");
+    background-image: url("../../public/images/main-content-image.jpg");
     background-position: center center;
     background-size: cover;
 }
