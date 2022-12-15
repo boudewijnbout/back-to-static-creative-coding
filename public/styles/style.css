@@ -28,32 +28,48 @@ body[data-nav="true"] > button {
     animation: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 main {
     transition: transform 0.65s cubic-bezier(0.45, 0.02, 0.09, 0.98) 0s;
 }
 
 section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     height: 100vh;
     position: relative;
     z-index: 2;
+    background-image: url("/public/images/main-content-image.jpg");
+    background-position: center center;
+}
+
+section::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
 
 section article {
-    margin: 10em 5rem;
+    padding: 3rem 1rem;
+    position: relative;
 }
 
 section article h1 {
-    font-size: 3.5rem;
-    color: #303039;
+    /* font-size: 3.5rem; */
+    color: #fff;
     font-weight: 500;
     position: relative;
 }
 
 section article p {
-    color: #898989;
-    margin-top: 3rem;
+    color: #fff;
+    margin-top: 2rem;
 }
 
 picture {
@@ -63,8 +79,8 @@ picture {
 }
 
 button {
-    height: 5rem;
-    width: 5rem;
+    width: 4rem;
+    height: 4rem;
     position: fixed;
     z-index: 3;
     left: 50%;
@@ -116,21 +132,123 @@ nav {
     width: 100%;
     left: 0;
     background-color: #262626;
-    padding: 2rem;
+    /* padding: 3rem; */
+    padding: 1.5rem;
     position: absolute;
+    overflow-x: scroll;
+}
+
+nav::-webkit-scrollbar {
+    display: none;
 }
 
 nav div  {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     transform: translateY(70%) scale(0.9);
     transition: transform 0.65s cubic-bezier(0.45, 0.02, 0.09, 0.98) 0s;
 }
 
+nav div a {
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+nav div a:hover {
+    transform: translateY(-.65rem);
+}
+
 nav div a h2 {
     color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+nav div a:nth-child(1) h2:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    background-color: #eef4d1;
+    border-radius: 50%;
+    margin-right: 5px;
 }
 
 nav div a img {
-    width: 20rem;
+    width: 16rem;
+    border-radius: .3rem;
+}
+
+@media (min-width: 40rem) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: none;
+    }
+
+    section article {
+        padding: 0;
+        margin: 5rem 2rem;
+    }
+
+    section:before {
+        display: none;
+    }
+
+    section article h1 {
+        color: #303039;
+    }
+
+    section article p {
+        color: #898989;
+    }
+
+    nav {
+        padding: 2rem;
+    }
+
+    nav div a img {
+        width: 19rem;
+    }
+}
+
+@media (min-width: 62.5rem) {
+    section article {
+        padding: 0;
+    }
+
+    section article h1 {
+        font-size: 3rem;
+    }
+
+    button {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    section article {
+        padding: 0;
+        margin: 10rem 5rem;
+    }
+
+    section article h1 {
+        font-size: 3.5rem;
+    }
+
+    section article p {
+        margin-top: 3rem;
+    }
+
+    nav {
+        padding: 3rem;
+    }
+
+    nav div a img {
+        width: 22rem;
+    }
 }
