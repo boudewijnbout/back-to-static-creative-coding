@@ -1,2 +1,2 @@
-# CC | Week #1
+# ⚡ Create Coding Week #1
 
