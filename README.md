@@ -1,6 +1,6 @@
 # ⚡ Create Coding Coding Week #3
 
-<img width="600" alt="Scherm­afbeelding 2022-12-22 om 15 09 13" src="https://user-images.githubusercontent.com/45170095/209152232-47509854-fef8-4adf-8a9a-d22192d24d28.png">
+<img width="800" alt="Scherm­afbeelding 2022-12-22 om 15 09 13" src="https://user-images.githubusercontent.com/45170095/209152232-47509854-fef8-4adf-8a9a-d22192d24d28.png">
 
 
 Dit project omvat een creative coding applicatie, waarin geëxpirimenteerd is met te gekke animaties, transitions en micro interacties.
